@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+	
+	text-decoration: none;
+	
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;	
+	margin: 0;
+	padding: 0;
+}
+
+
+.jumbotron {
+	text-align: right;
+	margin-top: -20px;
+	min-height: 610px;
+	background-image: url(ff.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #0c0b36;
+	/*background-attachment: fixed;*/
+}
+
+.jumbotron h2 {
+	margin-right: 10px;
+	margin-top: 18px;
+}
+
+nav {
+	display: flex;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 60px;
+	background-color: #0c0b36;
+}
+
+nav .logo {
+	color: white;
+	margin-top: 8px;
+	padding-left: 50px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+nav ul{
+	display: inline-block;
+	list-style: none;
+	margin-top: 18px;
+	margin-left: auto;	
+	margin-right: 30px;
+}
+
+
+nav a {
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-right: 3px;
+	border: 1px solid transparent;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+nav a:hover{
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+main {
+	
+	display: flex;
+	flex-direction: column;
+	min-width: 100%;
+	
+	
+	
+}
+
+.content{
+	display: flex;
+	padding: 30px;
+	text-align: center;
+	width: 80%;
+	margin: 5px auto;
+}
+
+article {
+	font-size: large;
+	padding: 10px;
+	text-align: justify;
+	margin-right: 10px;
+}
+
+article h1 {
+	text-align: center;
+	color:#aaa; text-shadow: 1px 1px 0 black, 2px 2px 0 black, 3px 3px 0 black, 4px 4px 0 black, 5px 5px 0 black; 
+}
+
+.content img{
+	
+	min-width: 400px;
+	min-height: 250px;
+	max-width: 400px;
+	max-height: 250px;
+	margin: auto;
+	box-shadow: 0px 0px 5px 5px #0c0b36;
+	opacity: 1;
+	transition: 0.7s;
+}
+
+.content img:hover{
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+   border-radius: 5px;
+}
+
+.about {
+	display: inline-block;
+	bottom: 0;
+	width: 100%;
+	min-height: 50px;
+	background-color: yellow;
+	text-align: center;
+	background-color: #0c0b36;
+}
+
+.about p {
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+}
+
+
+
+/* Responsive Breakpoint */
+
+@media screen and (max-width: 900px) {
+	nav ul {
+		display: none;
+	}
+	
+	.content {
+		display: inline;
+		
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.content img {
+		min-width: 300px;
+		min-height: 200px;
+		max-width: 200px;
+		max-height: 125px;
+
+	}
+}
